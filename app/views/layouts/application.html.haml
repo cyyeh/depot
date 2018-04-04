@@ -13,6 +13,9 @@
         =@page_title
     %section.content
       %nav.side_nav
+        -if @cart
+          %div#cart.carts
+            =render @cart
         %ul
           %li
             =link_to 'Home', '/'
